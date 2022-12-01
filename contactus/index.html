@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="icon" type="image/png" href="contactus\logo2.png"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="sketch.js"></script>
+    
+</head>
+<body>
+    
+    <!--CONTACT SECTION-->
+    <section id="contact-section">
+        <footer>
+            <section class="mb-4" style="color: black; background-color: #f5ebe0;;">
+                <!--Section heading-->
+                <h2 class="h1-responsive font-weight-bold text-center my-4 " style="text-align: center;"><u>Contact us</u></h2>
+                <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5" style="text-align: center;">Do you have any questions? Please do not
+                    hesitate to contact us
+                    directly. Our team will come back to you within
+                    a matter of hours to help you.</p>
+
+
+
+                <!--Grid row-->
+                <div class="row" id="contact" >
+                    
+                    <div class="form-container">
+                        <h4 style="text-align: center;">Contact Form</h4>
+                        <form name="contactForm" method="post" onsubmit="return validate()" action="#">
+                            <input type="text" id="name" name="name" placeholder="Your name">
+                            <span class="errors"></span><br>
+
+                            
+                            <input type="text" placeholder="Email address" id="email" name="email">
+                            <span class="errors"></span><br>
+
+                           
+                            <input type="text" placeholder="Phone number" id="phone" name="phone">
+                            <span class="errors"></span><br>
+
+                         
+                            <textarea placeholder="Your message" cols="132" rows="5" name="subject"
+                                id="subject"></textarea>
+                            <span class="errors"></span><br>
+
+                            <button type="submit" value="Submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+        </footer>
+    </section>
+
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
